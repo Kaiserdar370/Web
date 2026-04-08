@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MobilePulse – Expert Mobile Reviews, Tech News & Gadget Insights</title>
+  <meta name="description" content="MobilePulse delivers in-depth smartphone reviews, gadget comparisons, and honest buying guides. Trusted by 150,000+ readers worldwide." />
+  <meta name="keywords" content="mobile reviews, smartphone reviews, best phones 2024, tech blog, gadget reviews" />
+  <meta property="og:title" content="MobilePulse – Expert Mobile Reviews" />
+  <meta property="og:description" content="Honest, expert smartphone & gadget reviews for smart buyers." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://mobilepulse.com/" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-dot"></div>
+    MOBILEPULSE
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="pages/blog.html">Reviews</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+  </div>
+  <div class="nav-actions">
+    <button class="nav-search-btn" id="searchBtn" aria-label="Search">🔍</button>
+    <button class="theme-toggle" id="themeToggle">
+      <span>☀️</span><span>Light</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">🏠 Home</a>
+  <a href="pages/blog.html">📱 Reviews</a>
+  <a href="pages/about.html">👥 About</a>
+  <a href="pages/contact.html">✉️ Contact</a>
+  <a href="pages/privacy-policy.html">Privacy Policy</a>
+  <a href="pages/terms.html">Terms &amp; Conditions</a>
+  <a href="pages/disclaimer.html">Disclaimer</a>
+</div>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search reviews, phones, brands..." />
+      <button class="search-close" id="searchClose">✕</button>
+    </div>
+    <p class="search-hint">Press <kbd style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:0.78rem;">ESC</kbd> to close · <kbd style="background:var(--surface);padding:2px 8px;border-radius:4px;font-size:0.78rem;">⌘K</kbd> to open</p>
+  </div>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-overlay"></div>
+
+  <div class="hero-content page-enter">
+    <div class="hero-badge">
+      📡 &nbsp;India's Most Honest Phone Reviews
+    </div>
+    <h1>
+      <span>THE PULSE</span>
+      <span class="accent-line">OF MOBILE</span>
+      <span class="stroke-text">TECH</span>
+    </h1>
+    <p class="hero-desc">
+      In-depth reviews, real-world tests, and brutally honest verdicts on every smartphone worth your money. No fluff, no paid promotions — just the truth.
+    </p>
+    <div class="hero-ctas">
+      <a href="pages/blog.html" class="btn-primary">Browse Reviews →</a>
+      <a href="pages/about.html" class="btn-outline">Our Process</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="number">200+</span><span class="label">Reviews</span></div>
+      <div class="hero-stat"><span class="number">150K</span><span class="label">Readers</span></div>
+      <div class="hero-stat"><span class="number">48hrs</span><span class="label">Test Time</span></div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="phone-card-stack">
+      <div class="phone-card phone-card-left">
+        <div class="phone-img-placeholder">📱</div>
+        <div class="phone-card-title">Samsung Galaxy S24</div>
+        <div class="phone-card-score">
+          <div class="score-bar"><div class="score-fill" style="width:90%"></div></div>
+          <span>9.0</span>
+        </div>
+      </div>
+      <div class="phone-card phone-card-main">
+        <div class="phone-img-placeholder" style="background:linear-gradient(135deg,#1a1a24,#252538)">🔥</div>
+        <div class="phone-card-title">iPhone 15 Pro Max</div>
+        <div class="phone-card-score">
+          <div class="score-bar"><div class="score-fill" style="width:95%"></div></div>
+          <span>9.5</span>
+        </div>
+      </div>
+      <div class="phone-card phone-card-right">
+        <div class="phone-img-placeholder">📸</div>
+        <div class="phone-card-title">Pixel 8 Pro</div>
+        <div class="phone-card-score">
+          <div class="score-bar"><div class="score-fill" style="width:88%"></div></div>
+          <span>8.8</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NEWS TICKER ========== -->
+<div class="news-ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">📱 iPhone 16 Pro — Full Review Now Live</span>
+    <span class="ticker-item">🔥 OnePlus 13 Beats Its Price Tag</span>
+    <span class="ticker-item">📷 Pixel 9 Pro Camera Test Results</span>
+    <span class="ticker-item">💥 Samsung S25 Ultra — Worth ₹1.3 Lakh?</span>
+    <span class="ticker-item">⚡ Realme GT 6 — Gaming Performance Deep Dive</span>
+    <span class="ticker-item">🏆 Best Budget Phone Under ₹20,000 — Jan 2025</span>
+    <span class="ticker-item">📡 Redmi Note 14 Pro+ Review — Value King Returns</span>
+  </div>
+</div>
+
+<!-- ========== AD PLACEHOLDER ========== -->
+<div style="padding: 1.5rem clamp(1rem,4vw,3rem) 0;">
+  <div class="ad-placeholder ad-leaderboard">📢 Advertisement · 728×90</div>
+</div>
+
+<!-- ========== FEATURED REVIEWS ========== -->
+<section class="section">
+  <div class="section-header">
+    <div class="section-title-group">
+      <span class="section-eyebrow">🔥 Hot Right Now</span>
+      <h2 class="section-title">FEATURED REVIEWS</h2>
+    </div>
+    <a href="pages/blog.html" class="view-all">All Reviews →</a>
+  </div>
+
+  <div class="featured-strip">
+    <!-- Card 1 - Large -->
+    <a href="pages/review-iphone15promax.html" class="strip-card review-card" data-cat="flagship">
+      <div class="card-img">📱<span class="img-label">Flagship</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Flagship</span><span class="divider"></span><span>Jan 10, 2025</span><span class="divider"></span><span>9 min read</span></div>
+        <h3 class="card-title">iPhone 15 Pro Max Review: Apple's Best Smartphone Yet — But Should You Upgrade?</h3>
+        <p class="card-excerpt">Apple's titanium flagship redefines premium, but it costs a small fortune. After 30 days with it, here's what surprised us most — and what frankly disappointed.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">9.5/10</span></div>
+          <span class="read-more">Read Review →</span>
+        </div>
+      </div>
+      <span class="card-badge editor">Editor's Pick</span>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="pages/review-samsung-s24-ultra.html" class="strip-card review-card" data-cat="flagship">
+      <div class="card-img">🖊️<span class="img-label">Flagship</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Flagship</span><span class="divider"></span><span>Jan 8, 2025</span></div>
+        <h3 class="card-title">Samsung Galaxy S24 Ultra Review: The S Pen Powerhouse</h3>
+        <p class="card-excerpt">Samsung packs everything into the S24 Ultra — AI features, 200MP camera, titanium build. But is the S Pen still worth it in 2024?</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">9.2/10</span></div>
+          <span class="read-more">Review →</span>
+        </div>
+      </div>
+      <span class="card-badge hot">Hot</span>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="pages/review-pixel8pro.html" class="strip-card review-card" data-cat="camera">
+      <div class="card-img">📸<span class="img-label">Camera</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Camera</span><span class="divider"></span><span>Jan 5, 2025</span></div>
+        <h3 class="card-title">Google Pixel 8 Pro: The Camera That Thinks</h3>
+        <p class="card-excerpt">Google's AI photo processing reaches new heights. Is the Pixel 8 Pro the best photography phone you can buy right now?</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★½</span><span class="rating-num">8.8/10</span></div>
+          <span class="read-more">Review →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ========== CATEGORY FILTER + ALL REVIEWS ========== -->
+<section class="section" style="padding-top:0">
+  <div class="section-header">
+    <div class="section-title-group">
+      <span class="section-eyebrow">📱 All Categories</span>
+      <h2 class="section-title">LATEST REVIEWS</h2>
+    </div>
+    <a href="pages/blog.html" class="view-all">View All 20 →</a>
+  </div>
+
+  <div class="categories-bar">
+    <div class="cat-chip active" data-cat="all">All</div>
+    <div class="cat-chip" data-cat="budget">Budget</div>
+    <div class="cat-chip" data-cat="flagship">Flagship</div>
+    <div class="cat-chip" data-cat="gaming">Gaming</div>
+    <div class="cat-chip" data-cat="camera">Camera</div>
+    <div class="cat-chip" data-cat="battery">Battery</div>
+    <div class="cat-chip" data-cat="comparison">Comparisons</div>
+    <div class="cat-chip" data-cat="accessories">Accessories</div>
+  </div>
+
+  <div class="reviews-grid">
+
+    <!-- Review 1 -->
+    <a href="pages/review-redmi-note-14-pro.html" class="review-card" data-cat="budget">
+      <div class="card-img">💰<span class="img-label">Budget</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Budget</span><span class="divider"></span><span>Jan 12, 2025</span></div>
+        <h3 class="card-title">Redmi Note 14 Pro+ Review: The ₹25,000 King Strikes Again</h3>
+        <p class="card-excerpt">Xiaomi's Note series has always punched above its weight. The Pro+ version pushes even further with a 200MP camera and 90W charging — but there are trade-offs.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★½</span><span class="rating-num">8.7/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+      <span class="card-badge new">New</span>
+    </a>
+
+    <!-- Review 2 -->
+    <a href="pages/review-oneplus-13.html" class="review-card" data-cat="flagship">
+      <div class="card-img">⚡<span class="img-label">Flagship</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Flagship</span><span class="divider"></span><span>Jan 11, 2025</span></div>
+        <h3 class="card-title">OnePlus 13 Review: Fastest Charging Flagship of 2025</h3>
+        <p class="card-excerpt">100W wired + 50W wireless charging. Snapdragon 8 Elite. A camera co-engineered with Hasselblad. OnePlus is playing to win again.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★½</span><span class="rating-num">9.0/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+      <span class="card-badge new">New</span>
+    </a>
+
+    <!-- Review 3 -->
+    <a href="pages/review-realme-gt6.html" class="review-card" data-cat="gaming">
+      <div class="card-img">🎮<span class="img-label">Gaming</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Gaming</span><span class="divider"></span><span>Jan 9, 2025</span></div>
+        <h3 class="card-title">Realme GT 6 Review: 120Hz AMOLED Beast Under ₹35,000</h3>
+        <p class="card-excerpt">Realme's GT 6 is arguably the best gaming phone you can buy without spending flagship money. Here's how it holds up after weeks of intensive gaming.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.3/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 4 -->
+    <a href="pages/review-nothing-phone-3.html" class="review-card" data-cat="flagship">
+      <div class="card-img">⬜<span class="img-label">Flagship</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Flagship</span><span class="divider"></span><span>Jan 7, 2025</span></div>
+        <h3 class="card-title">Nothing Phone (3) Review: Design Disruption or Gimmick?</h3>
+        <p class="card-excerpt">The Glyph Interface gets smarter, the camera gets better, and the price goes up. Nothing's most ambitious phone yet — but is it worth ₹55,000?</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.1/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 5 -->
+    <a href="pages/review-iphone-vs-pixel.html" class="review-card" data-cat="comparison">
+      <div class="card-img">⚔️<span class="img-label">Comparison</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Comparison</span><span class="divider"></span><span>Jan 6, 2025</span></div>
+        <h3 class="card-title">iPhone 15 Pro vs Pixel 8 Pro: Which Camera Actually Wins?</h3>
+        <p class="card-excerpt">We shot 500+ test photos across 12 different scenarios. The results will surprise you. One phone absolutely dominates low-light; the other wins at portraits.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">Comparison</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+      <span class="card-badge editor">Must Read</span>
+    </a>
+
+    <!-- Review 6 -->
+    <a href="pages/review-poco-x7-pro.html" class="review-card" data-cat="budget">
+      <div class="card-img">🏎️<span class="img-label">Budget</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Budget</span><span class="divider"></span><span>Jan 4, 2025</span></div>
+        <h3 class="card-title">POCO X7 Pro Review: Dimensity 9300+ at ₹27,000 — Insane Value</h3>
+        <p class="card-excerpt">POCO crammed a flagship-grade chip into a mid-ranger and kept the price jaw-droppingly low. There has to be a catch, right? We found out.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.4/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 7 -->
+    <a href="pages/review-vivo-x200-pro.html" class="review-card" data-cat="camera">
+      <div class="card-img">🔭<span class="img-label">Camera</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Camera</span><span class="divider"></span><span>Jan 3, 2025</span></div>
+        <h3 class="card-title">Vivo X200 Pro Review: 200x Periscope Zoom That Actually Works</h3>
+        <p class="card-excerpt">Zeiss optics, a 1-inch sensor, and that mind-blowing telephoto system. The X200 Pro doesn't just compete with the best camera phones — it redefines what's possible.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">9.3/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+      <span class="card-badge editor">Editor's Pick</span>
+    </a>
+
+    <!-- Review 8 -->
+    <a href="pages/review-asus-rog-phone-8.html" class="review-card" data-cat="gaming">
+      <div class="card-img">🕹️<span class="img-label">Gaming</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Gaming</span><span class="divider"></span><span>Dec 30, 2024</span></div>
+        <h3 class="card-title">ASUS ROG Phone 8 Pro Review: The Most Powerful Gaming Phone Money Can Buy</h3>
+        <p class="card-excerpt">165Hz display, 65W fast charge, side-mounted ports, physical air triggers — ASUS built a gaming console you can slip into your pocket.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">9.4/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 9 -->
+    <a href="pages/review-samsung-galaxy-a55.html" class="review-card" data-cat="budget">
+      <div class="card-img">💎<span class="img-label">Mid-Range</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Mid-Range</span><span class="divider"></span><span>Dec 28, 2024</span></div>
+        <h3 class="card-title">Samsung Galaxy A55 5G Review: Premium Feel Without the Premium Price</h3>
+        <p class="card-excerpt">Gorilla Glass Victus+, IP67 rating, and a near-flagship camera at ₹38,999. The A55 is Samsung's most compelling mid-ranger in years.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.2/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 10 -->
+    <a href="pages/review-motorola-edge-50-pro.html" class="review-card" data-cat="battery">
+      <div class="card-img">🔋<span class="img-label">Battery</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Battery</span><span class="divider"></span><span>Dec 26, 2024</span></div>
+        <h3 class="card-title">Motorola Edge 50 Pro Battery Test: 125W Charging in 28 Minutes?</h3>
+        <p class="card-excerpt">We ran the Edge 50 Pro through our 48-hour battery stress test. 0 to 100% in under 30 minutes is extraordinary — but how does real-world battery life hold up?</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.5/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 11 -->
+    <a href="pages/review-oppo-find-x8-pro.html" class="review-card" data-cat="flagship">
+      <div class="card-img">🌟<span class="img-label">Flagship</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Flagship</span><span class="divider"></span><span>Dec 24, 2024</span></div>
+        <h3 class="card-title">OPPO Find X8 Pro Review: Hasselblad Cameras Meet Silk Screen Display</h3>
+        <p class="card-excerpt">OPPO's latest flagship brings their best camera system yet, a stunning quad-curved display, and AI features that actually make sense. A genuine iPhone alternative?</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">9.1/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 12 -->
+    <a href="pages/review-iphone-vs-samsung.html" class="review-card" data-cat="comparison">
+      <div class="card-img">🥊<span class="img-label">Comparison</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Comparison</span><span class="divider"></span><span>Dec 22, 2024</span></div>
+        <h3 class="card-title">iPhone 15 Pro Max vs Samsung S24 Ultra: The Definitive 2024 Flagship Battle</h3>
+        <p class="card-excerpt">₹1,34,900 vs ₹1,29,999. Two of the most capable smartphones ever made. After testing both for a month, here's which one we'd actually spend our money on.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">Comparison</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+      <span class="card-badge hot">Hot</span>
+    </a>
+
+    <!-- Review 13 -->
+    <a href="pages/review-tecno-spark-30-pro.html" class="review-card" data-cat="budget">
+      <div class="card-img">✨<span class="img-label">Budget</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Budget</span><span class="divider"></span><span>Dec 20, 2024</span></div>
+        <h3 class="card-title">Tecno Spark 30 Pro Review: Best First Smartphone Under ₹15,000?</h3>
+        <p class="card-excerpt">Tecno is rapidly improving quality across all segments. The Spark 30 Pro is shockingly capable for under 15K — especially for first-time buyers.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★½</span><span class="rating-num">7.4/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 14 -->
+    <a href="pages/review-samsung-vs-oneplus-battery.html" class="review-card" data-cat="battery">
+      <div class="card-img">⚡<span class="img-label">Battery</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Battery Test</span><span class="divider"></span><span>Dec 18, 2024</span></div>
+        <h3 class="card-title">Samsung S24 vs OnePlus 13 Battery Life: 72-Hour Real World Test</h3>
+        <p class="card-excerpt">We put both phones through a punishing 3-day battery test — streaming, gaming, calls, navigation. The results show a clear winner and it's not who you'd expect.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">Test</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 15 -->
+    <a href="pages/review-best-wireless-earbuds.html" class="review-card" data-cat="accessories">
+      <div class="card-img">🎧<span class="img-label">Accessories</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Accessories</span><span class="divider"></span><span>Dec 16, 2024</span></div>
+        <h3 class="card-title">5 Best Wireless Earbuds for Android in 2025 (Tested & Ranked)</h3>
+        <p class="card-excerpt">We tested 12 pairs across 3 months. Sony, Samsung, CMF, Jabra, Nothing — our ranking will help you pick the right one for your budget and use case.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">Roundup</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+      <span class="card-badge editor">Roundup</span>
+    </a>
+
+    <!-- Review 16 -->
+    <a href="pages/review-redmi-note-14.html" class="review-card" data-cat="budget">
+      <div class="card-img">🎯<span class="img-label">Budget</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Budget</span><span class="divider"></span><span>Dec 14, 2024</span></div>
+        <h3 class="card-title">Redmi Note 14 Review: The Smart Buy Under ₹18,000 in 2025</h3>
+        <p class="card-excerpt">Not everyone needs the Pro+. The standard Redmi Note 14 is a brilliantly balanced phone that covers every daily need without breaking the bank.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.0/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 17 -->
+    <a href="pages/review-cmf-phone-1.html" class="review-card" data-cat="budget">
+      <div class="card-img">🔧<span class="img-label">Budget</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Budget</span><span class="divider"></span><span>Dec 12, 2024</span></div>
+        <h3 class="card-title">CMF Phone 1 Review: Nothing's ₹15,999 Modular Surprise</h3>
+        <p class="card-excerpt">Nothing's sub-brand CMF launched a modular phone with swappable back covers at an unbelievable price. Is it just a gimmick or a genuinely good budget phone?</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.1/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 18 -->
+    <a href="pages/review-best-phone-cameras.html" class="review-card" data-cat="camera">
+      <div class="card-img">🏆<span class="img-label">Camera</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Camera</span><span class="divider"></span><span>Dec 10, 2024</span></div>
+        <h3 class="card-title">Best Camera Phones of 2024–2025: Ranked After 10,000+ Test Shots</h3>
+        <p class="card-excerpt">From ultrawide to macro, low-light to portrait — we ranked every major camera phone using a 50-point evaluation system. The top 10 might surprise you.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">Guide</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+      <span class="card-badge editor">Best Of</span>
+    </a>
+
+    <!-- Review 19 -->
+    <a href="pages/review-iqoo-neo-9-pro.html" class="review-card" data-cat="gaming">
+      <div class="card-img">🔥<span class="img-label">Gaming</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Gaming</span><span class="divider"></span><span>Dec 8, 2024</span></div>
+        <h3 class="card-title">iQOO Neo 9 Pro Review: Snapdragon 8 Gen 2 at ₹36,999 — Still Relevant?</h3>
+        <p class="card-excerpt">The Neo 9 Pro offers last year's flagship chip at a mid-range price. Gaming performance is stellar, but the camera system is where things get complicated.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★</span><span class="rating-num">8.2/10</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Review 20 -->
+    <a href="pages/review-best-smartwatch.html" class="review-card" data-cat="accessories">
+      <div class="card-img">⌚<span class="img-label">Accessories</span></div>
+      <div class="card-body">
+        <div class="card-meta"><span>Accessories</span><span class="divider"></span><span>Dec 6, 2024</span></div>
+        <h3 class="card-title">Best Smartwatches for Android in 2025: Galaxy Watch vs Pixel Watch vs OnePlus</h3>
+        <p class="card-excerpt">Which Android smartwatch actually deserves your wrist? We wore three flagship smartwatches simultaneously for 30 days. Only one truly impressed us.</p>
+        <div class="card-footer">
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-num">Roundup</span></div>
+          <span class="read-more">Read →</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ========== IN-CONTENT AD ========== -->
+<div style="padding: 0 clamp(1rem,4vw,3rem);">
+  <div class="ad-placeholder ad-leaderboard">📢 Advertisement · 728×90</div>
+</div>
+
+<!-- ========== NEWSLETTER ========== -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <h2>GET THE <span>PULSE</span></h2>
+    <p>Join 150,000+ readers who get our weekly roundup of the best phone reviews, deals, and buying guides — directly in their inbox. No spam, ever.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Enter your email address" required />
+      <button type="submit" class="btn-primary">Subscribe →</button>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-dot"></div>
+        MOBILEPULSE
+      </div>
+      <p class="footer-tagline">India's most trusted independent mobile review platform. We test every phone so you can choose wisely.</p>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+        <a href="#" class="social-link" aria-label="Instagram">📸</a>
+        <a href="#" class="social-link" aria-label="Telegram">✈️</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Reviews</h4>
+      <a href="pages/blog.html?cat=flagship">Flagship Phones</a>
+      <a href="pages/blog.html?cat=budget">Budget Picks</a>
+      <a href="pages/blog.html?cat=gaming">Gaming Phones</a>
+      <a href="pages/blog.html?cat=camera">Camera Reviews</a>
+      <a href="pages/blog.html?cat=accessories">Accessories</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="pages/about.html">About Us</a>
+      <a href="pages/contact.html">Contact</a>
+      <a href="pages/about.html#editorial">Editorial Policy</a>
+      <a href="pages/about.html#advertise">Advertise</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="pages/privacy-policy.html">Privacy Policy</a>
+      <a href="pages/terms.html">Terms &amp; Conditions</a>
+      <a href="pages/disclaimer.html">Disclaimer</a>
+      <a href="pages/privacy-policy.html#cookies">Cookie Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 MobilePulse. All rights reserved. Made with 📱 in India.</p>
+    <div class="footer-bottom-links">
+      <a href="pages/privacy-policy.html">Privacy</a>
+      <a href="pages/terms.html">Terms</a>
+      <a href="pages/disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
